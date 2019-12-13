@@ -1,18 +1,5 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-// import "../styles/styles.scss"
-
-// const PublicSidebar = ({children}) => (
-//     <div className="flex flex-col">        
-//         <Link to="/sitemap">Sitemap</Link>
-//         <Link to="/md-files">All Markdown Files</Link>
-//         <Link to="/">Public</Link>
-//         <Link to="/">Public</Link>
-//         <Link to="/">Public</Link>
-//     </div>
-// );
-
-// export default PublicSidebar;
 
 const PublicSidebar = ({children, data}) => (
     <StaticQuery
@@ -31,7 +18,7 @@ const PublicSidebar = ({children, data}) => (
                         }
                     }
                 }
-                next: allMarkdownRemark(filter: {frontmatter: {tags: {in: "next"}, authRequired: {eq: false}}}) {
+                learning: allMarkdownRemark(filter: {frontmatter: {tags: {in: "learning"}, authRequired: {eq: false}}}) {
                     totalCount
                     edges {
                         node {
@@ -60,8 +47,8 @@ const PublicSidebar = ({children, data}) => (
                 </div>
                 ))}
 
-                <p>Next</p>
-                {data.next.edges.map(({ node }) => (
+                <p>Learning</p>
+                {data.learning.edges.map(({ node }) => (
                 <div className="ml-6" key={node.id}>
                     <Link to={node.fields.slug}>
                     <p>

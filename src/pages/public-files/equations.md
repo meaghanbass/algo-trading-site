@@ -1,5 +1,5 @@
 ---
-title: "Equationss"
+title: "Equations"
 date: "2017-08-10"
 tags: ["equations","statistics"]
 authRequired: false

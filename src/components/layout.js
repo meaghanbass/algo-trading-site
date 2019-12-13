@@ -5,6 +5,7 @@ import PublicSidebar from './publicsidebar'
 import PrivateSidebar from './privatesidebar'
 import Header from './header'
 import Panel from './panel'
+import WelcomeBadge from './welcomeBadge'
 
 const Layout = ({children}) => {
     return (
@@ -19,6 +20,7 @@ const Layout = ({children}) => {
             </aside>
             
             <main className="w-3/4 m-4">
+                <WelcomeBadge />
                 <Panel>
                     {children}
                 </Panel>
