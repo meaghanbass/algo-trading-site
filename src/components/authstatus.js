@@ -1,5 +1,5 @@
 import React from "react"
-import { Router } from "@reach/router"
+// import { Router } from "@reach/router"
 import { logout, isAuthenticated, getProfile } from "../utils/auth"
 import { Link } from "gatsby"
 
