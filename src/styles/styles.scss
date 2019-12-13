@@ -1,0 +1,46 @@
+$themeBackground: rgba(36,70,113,1);
+$themeColor: rgba(39,43,52,1);
+
+.theme-color {
+    background: $themeBackground;
+}
+
+.theme-font {
+    font-family: minion-pro, serif;
+}
+
+body {
+    color: #212831;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f3f3f3;
+}  
+
+.container {
+    width: 1160px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+#wrapper {
+    height: 100vh; 
+}
+
+.mkd {
+    font-weight: 300;
+    h1 {
+        font-size: 2rem;
+        color: $themeColor;
+    }
+    p {
+        margin: 10px 0;
+    }
+    .pdf {
+        width: max-content;
+        float: right;
+    }
+    pre {
+        font-size: 0.75rem;
+    }
+}
