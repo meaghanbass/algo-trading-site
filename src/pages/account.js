@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import { login, logout, isAuthenticated } from "../utils/auth"
 import Loader from "../components/loader"
 import Layout from "../components/layout"
